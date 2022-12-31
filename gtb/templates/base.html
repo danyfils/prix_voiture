@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>my car</title>
+</head>
+<body>
+    <form action="/gtb/predict/" method="POST">
+        {% csrf_token %}
+        <label>nombre de place</label>
+        <input type="number" name="nb_places"/><br><br>
+        <br><br>
+        <label>nombre de porte</label>
+        <input type="number" name="nb_porte"/><br><br>
+        <br><br>
+        <label>type automatique ou pas</label>
+        <input type="number" name="automatique"/><br><br>
+        <br><br>
+        <input type="submit" value="predire"/>
+    </form>>
+
+    
+</body>
+</html>
